@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <style>
+    table, tr, td, th, tbody, thead, tfoot {
+    page-break-inside: avoid !important;
+}
+
+    table th {
+      border: none !important;
+      color: #FFFFFF;
+      font-size:14px;
+    }
+    
+    table td {
+      border: none !important;
+      color: #6D6D6D;
+      font-size:12px;
+    }
+
+    .avoid {
+      page-break-inside: avoid !important;
+      margin: 4px 0 4px 0;  /* to keep the page break from cutting too close to the text in the div */
+    }  
+
+    .head_table {
+      background-color: #3BC7C0;
+      color: white;
+    }
+    .subtopo {
+      padding-top: 10px;
+      color: #6D6D6D;
+    }
+
+    .subtopo h2 {
+      color: #6D6D6D;
+      font-size: 15px;
+    }
+
+    .subtopo p {
+      color: #6D6D6D;
+    }
+
+    .resumo {
+      padding: 0px 0px 10px 10px;
+    }
+
+    .btn_pdf {
+      opacity: 0;
+    }
+
+    @media screen and (min-width: 390px) {
+
+      .btn_pdf {
+        opacity: 1;
+      }
+    }
+
+    .total {
+      color: #6D6D6D;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .footer {
+      color: #6D6D6D;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+  </style>
+<div class="container">
+
+  <div class="subtopo">
+    <div class="row">
+      <div class="col-sm-8 col-md-8 col-lg-8 pull-left text-left">
+        <p>Por médico - Produção mensal incluindo convênio e forma de pagamento.</p>
+        <p>Período: 01/07/2022 até 31/07/2022.</p>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 pull-right text-right">
+        <div class="resumo">
+          <div><a class="btn btn-default btn-sm btn_pdf" href="http://localhost:8000/report-temporario" target="_blank">
+            Imprimir PDF</a>
+          </div>
+          <div class="total">
+            Total: R$ 500,00
+          </div>
+        </div>    
+      </div>
+
+    </div>
+  </div> 
+
+<div class="">
+  <table class="table table-striped print-friendly ">
+    <thead class="head_table">
+      <tr>
+        <th>Consulta</th>
+        <th>Médico</th>
+        <th>Paciente</th>
+        <th>Convênio</th>
+        <th>Pagamento</th>
+        <th class="pull-right">R$</th>
+      </tr>
+    </thead>
+
+      <tbody>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+        <tr>
+          <td>30/07/2022</td>
+          <td>Antônio Paulo da silva figueido costa</td>
+          <td>Carlos Lira Jorge Silvero dos Reis Borba</td>
+          <td>Fusex</td>
+          <td>Repasse</td>
+          <td class="pull-right">150,00</td>
+        </tr>
+        <tr>
+          <td>25/07/2022</td>
+          <td>Marcio Lira</td>
+          <td>Vera Lima</td>
+          <td>Unimed</td>
+          <td>Repasse</td>
+          <td class="pull-right">300,00</td>
+        </tr>
+        <tr>
+          <td>21/07/2022</td>
+          <td>Lucia Queiroga</td>
+          <td>Valber Souza</td>
+          <td>Sem Convênio</td>
+          <td>Espécie</td>
+          <td class="pull-right">100,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <hr>
+    <div class="footer pull-right">Total: R$ <strong>550,00</strong></div>
+  
+    
+      
+</div>
+
+</body>
+
+</html>
